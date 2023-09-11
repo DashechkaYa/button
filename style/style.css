@@ -12,36 +12,40 @@
   margin: 200px auto;
 }
 
-.common {
+.button {
+  cursor: pointer;
   margin: 50px;
-  padding: 12px, 24px, 12px, 24px;
+  padding: 0 24px;
   height: 48px;
-  width: 138px;
+  min-width: 138px;
   border-radius: 8px;
-  border: 0px;
-}
-
-.working {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #5300c9;
   color: #ffffff;
+  box-shadow: 0 0 0 0 rgba(83, 0, 201, 0.2);
+  border: none;
+  transition-property: background-color box-shadow;
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
 }
 
-.working:hover {
+.button:hover {
   background-color: #8647e0;
 }
 
-.working:focus {
-  background-color: #5300c9;
-  /* border: 3px;
-  border-color: #ff226c; */
-  box-shadow: 0 0 0 3px #dcc3ff;
-}
-
-.working:active {
+.button:active {
   background-color: #4400a5;
 }
 
-.disabled {
+.button:focus {
+  background-color: #5300c9;
+  box-shadow: 0 0 0 3px #dcc3ff;
+}
+
+.button:disabled {
   background-color: #e4e4e4;
   color: #afacac;
+  cursor: not-allowed;
 }
